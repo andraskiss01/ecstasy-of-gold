@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activityLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".layouts.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/instructionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.005"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/instructionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom">
+
+            <ScrollView
+                android:id="@+id/sc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/note">
+
+                <LinearLayout
+                    android:id="@+id/scLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/scNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorWhite">
+                    </TextView>
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/viewPowerTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:text="@string/view_power" />
+
+            <TextView
+                android:id="@+id/increaseLifeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:text="@string/life" />
+
+            <TextView
+                android:id="@+id/swapFiringPowerTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:text="@string/firing_power" />
+
+            <TextView
+                android:id="@+id/shootTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:text="@string/shoot" />
+
+            <TextView
+                android:id="@+id/getToolTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:text="@string/get_tool" />
+
+            <TextView
+                android:id="@+id/buySellToolTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:text="@string/buy_sell_tool" />
+
+            <TextView
+                android:id="@+id/inventoryTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:text="@string/inventory" />
+
+            <TextView
+                android:id="@+id/openCoffinTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="@string/open_coffin"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+</LinearLayout>
