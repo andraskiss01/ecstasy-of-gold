@@ -1,3 +1,3 @@
-# ecstasy-of-gold
+# Ecstasy of Gold
 
 Copyright: Andras Kiss https://andraskiss.hu
